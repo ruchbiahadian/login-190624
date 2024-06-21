@@ -1,5 +1,5 @@
 <template>
-  <div class="section_login">
+  <div class="views_login">
     <div class="box">
       <h1>Login</h1>
       <form @submit.prevent="submit">
@@ -48,6 +48,7 @@
           cookie.set("userdata", forcookie, {expires: 1});
           // 1 = 1 jam
           this.$store.commit('SET_LOGIN', forcookie)
+          alert('Anda telah berhasil Login!');
           this.$router.push({path: '/home'})
         })
       }

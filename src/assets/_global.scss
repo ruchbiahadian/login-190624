@@ -7,3 +7,12 @@ $black: #141414;
 body{
     font-family: Calibri, sans-serif;
 }
+
+.red{
+    background-color: rgb(237, 79, 79);
+    color: white;
+}
+
+body{
+    background-color: $blue;
+}

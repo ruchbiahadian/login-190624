@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>Home</h1>
+    <div class="views_home">
+        <h1>Anda Telah Berhasil Login!</h1>
     </div>
 </template>
 

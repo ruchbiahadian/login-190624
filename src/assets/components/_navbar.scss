@@ -1,0 +1,32 @@
+nav{
+    background-color: $white;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+
+    ul{
+        margin: 10px;
+        li{
+            list-style: none;
+            a{
+                padding: 0 10px;
+                color: black;
+            }
+            a.router-link-exact-active {
+                color: red;
+            }
+            button{
+                background-color: $gray;
+                color: $blue;
+                text-decoration: none;
+                padding: 10px;
+                margin: 0 5px;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+} 
+
+ 

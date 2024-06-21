@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import LoginView from '@/views/Login.vue'
 import HomeView from '@/views/Home.vue'
+import AboutView from '@/views/About.vue'
 import store from '@/store'
 
 
@@ -18,6 +19,15 @@ const routes = [
     path: '/home',
     name: 'home',
     component: HomeView,
+    meta:{
+      requireAuth: true
+    }
+  },
+
+  {
+    path: '/about',
+    name: 'about',
+    component: AboutView,
     meta:{
       requireAuth: true
     }
