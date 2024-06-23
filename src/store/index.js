@@ -18,7 +18,8 @@ export default createStore({
     logout({commit}, router){
       if(confirm('Apakah anda yakin akan logout?')){
         commit('SET_LOGOUT')
-        router.push({path: '/'})
+        // router.push({path: '/'})
+        window.location.href = '/';
       }
     }
   },
