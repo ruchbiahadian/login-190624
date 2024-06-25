@@ -19,7 +19,8 @@ export default createStore({
       if(confirm('Apakah anda yakin akan logout?')){
         commit('SET_LOGOUT')
         // router.push({path: '/'})
-        window.location.href = '/';
+        // window.location.href = '/';
+        window.location.reload();
       }
     }
   },

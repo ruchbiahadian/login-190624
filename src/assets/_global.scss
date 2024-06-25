@@ -13,6 +13,46 @@ body{
     color: white;
 }
 
+.white{
+    color: white;
+}
+
 body{
     background-color: $blue;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1{
+    margin: 15px 0;
+}
+
+.table{
+
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    thead{
+        td{
+            background-color: white;
+        }
+    }
+
+    tbody{
+        td{
+            background-color: rgba($color: #ffffff, $alpha: 0.8);
+        }
+    }
+
+    tr{
+        td{
+            padding: 10px;
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
 }
