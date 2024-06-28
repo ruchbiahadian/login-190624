@@ -2,8 +2,10 @@
     <nav>
         <ul>
             <li>
-                <RouterLink to="/home">Home</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
+                <RouterLink to="/home">Products</RouterLink>
+                <RouterLink to="/addProduct">Add Product</RouterLink>
+                <RouterLink to="/category">Categories</RouterLink>
+                <!-- <RouterLink to="/about">About</RouterLink> -->
                 <button class="red" @click="logout">Logout</button>
             </li>
         </ul>

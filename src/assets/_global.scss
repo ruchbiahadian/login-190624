@@ -55,4 +55,29 @@ h1{
             }
         }
     }
+
+    input, textarea, select{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 4px;
+    }
+
+    button{
+        padding: 8px;
+        margin: 0 4px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button.edit, .submit{
+        background-color: rgb(0, 192, 0);
+        color: white;
+    }
+
+    button.delete{
+        background-color: rgb(210, 21, 0);
+        color: white;
+    }
 }

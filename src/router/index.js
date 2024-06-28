@@ -1,7 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import LoginView from '@/views/Login.vue'
 import HomeView from '@/views/Home.vue'
+import CategoryView from '@/views/Category.vue'
 import AboutView from '@/views/About.vue'
+import EditView from '@/views/Edit.vue'
+import AddProductView from '@/views/addProduct.vue'
 import store from '@/store'
 
 
@@ -32,6 +35,34 @@ const routes = [
       requireAuth: true
     }
   },
+
+  {
+    path: '/edit/:id',
+    name: 'edit',
+    component: EditView,
+    meta:{
+      requireAuth: true
+    }
+  },
+
+  {
+    path: '/category',
+    name: 'category',
+    component: CategoryView,
+    meta:{
+      requireAuth: true
+    }
+  },
+
+  {
+    path: '/addProduct',
+    name: 'addProduct',
+    component: AddProductView,
+    meta:{
+      requireAuth: true
+    }
+  },
+
 ]
 
 const router = createRouter({
